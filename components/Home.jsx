@@ -49,8 +49,9 @@ export default function Home() {
           <div className="text-gray-700">LURU</div>
           <div className="h-3 w-3 rounded-full bg-black"></div>
         </div>
-        <div className="font-mono tracking-tight">
-          Apa yang kamu cari?, Ada disekitarmu!
+        <div className="font-mono tracking-tight flex flex-col items-center justify-center">
+          <div>Apa yang kamu cari?</div>
+          <div>Ada disekitarmu!</div>
         </div>
         {/* <button className="text-gray-700 font-semibold px-8 py-2 rounded-full border-gray-700 border absolute bottom-14 left-1/2 transform -translate-x-1/2">
           Follow
@@ -100,7 +101,7 @@ export default function Home() {
       <div className="grid grid-cols-12 gap-4 w-full px-4">
         {menu.map((item) => (
           <div
-            key="item"
+            key={item}
             className="col-span-6 rounded w-full shadow-lg flex flex-col overflow-hidden"
           >
             <div className="bg-white space-y-3">
