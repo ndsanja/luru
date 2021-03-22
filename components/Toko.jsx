@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Home() {
+export default function Toko() {
   const menu = [
     "Nasi Goreng Super Mantab",
     "Es Teh",
@@ -26,35 +26,29 @@ export default function Home() {
   return (
     <div className="flex flex-col font-semibold w-full mb-20 relative bg-gray-50">
       <div className="h-14 w-full fixed bottom-0 ring-0 left-0 bg-white shadow-inner flex items-center justify-around text-gray-500">
-        <div>Home</div>
-        <div>Kate</div>
-        <Link href="/toko">
+        <Link href="/home">
           <a>
-            <div>Expl</div>
+            <div>Home</div>
           </a>
         </Link>
+        <div>Kate</div>
+        <div>Expl</div>
         <div>Order</div>
         <div>Me</div>
       </div>
-      <div className="flex items-center justify-between absolute top-0 left-0 right-0 space-x-4 px-4 pt-4 z-10">
-        <div className="">icon</div>
-        <input
+      <div className="flex items-center justify-between fixed top-0 left-0 right-0 space-x-4 px-4 py-4 pt-4 z-10">
+        <div className="">back</div>
+        {/* <input
           type="text"
           className="flex-1 w-full border rounded focus:outline-none p-2 border-white"
-        />
-        <div className="">icon</div>
+        /> */}
+        <div className="">Menu</div>
       </div>
-      <div className="bg-gradient-to-b from-green-300 to-gray-50 h-80 w-full space-y-2 flex flex-col items-center justify-center relative">
-        <div className="flex text-6xl">
-          <div className="text-gray-700">LURU</div>
-          <div className="h-3 w-3 rounded-full bg-black"></div>
-        </div>
-        <div className="font-mono tracking-tight">
-          Everithing you need, in near you!
-        </div>
-        {/* <button className="text-gray-700 font-semibold px-8 py-2 rounded-full border-gray-700 border absolute bottom-14 left-1/2 transform -translate-x-1/2">
+      <div className="bg-gradient-to-b from-yellow-300 to-gray-50 h-72 w-full flex flex-col items-center justify-center relative">
+        <div className="text-gray-700 text-3xl">Koffie Clings</div>
+        <button className="text-gray-700 font-semibold px-8 py-2 rounded-full border-gray-700 border absolute bottom-14 left-1/2 transform -translate-x-1/2">
           Follow
-        </button> */}
+        </button>
       </div>
       <div className=""></div>
       <div className="mb-4 text-xl text-left px-4">Special Offers</div>
