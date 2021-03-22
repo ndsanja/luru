@@ -6,10 +6,10 @@ export default function Splash() {
       <Link href="/home">
         <a>
           <div className="flex space-x-2">
-            <div className="font-extrabold text-9xl font-mono tracking-tight">
+            <div className="font-extrabold text-8xl font-mono tracking-tight">
               LURU
             </div>
-            <div className="h-6 w-6 rounded-full bg-black"></div>
+            <div className="h-5 w-5 rounded-full bg-black"></div>
           </div>
         </a>
       </Link>
