@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import * as Icon from "./icons";
 
 export default function Home() {
   const menu = [
@@ -25,31 +26,59 @@ export default function Home() {
   };
   return (
     <div className="flex flex-col font-semibold w-full mb-20 relative bg-gray-50">
-      <div className="h-14 w-full fixed bottom-0 ring-0 left-0 bg-white shadow-inner flex items-center justify-around text-gray-500">
-        <div>Home</div>
-        <div>Kate</div>
-        <Link href="/toko">
+      <div className="py-2 w-full fixed bottom-0 ring-0 left-0 bg-white shadow-inner flex items-center justify-around text-gray-500">
+        <Link href="/home">
           <a>
-            <div>Expl</div>
+            <div className="flex flex-col items-center justify-center">
+              <Icon.Home className="h-8 w-8 text-gray-800" />
+              <div className="text-xs">Home</div>
+            </div>
           </a>
         </Link>
-        <div>Order</div>
-        <div>Me</div>
+        <div className="flex flex-col items-center justify-center">
+          <Icon.Category className="h-8 w-8 text-gray-800" />
+          <div className="text-xs">Category</div>
+        </div>
+        <Link href="/explore">
+          <a>
+            <div className="flex flex-col items-center justify-center">
+              <Icon.Explore className="h-8 w-8 text-gray-800" />
+              <div className="text-xs">Explore</div>
+            </div>
+          </a>
+        </Link>
+        <div className="flex flex-col items-center justify-center relative">
+          <Icon.Shopping className="h-8 w-8 text-gray-800" />
+          <div className="text-xs">Orders</div>
+          {count > 0 && (
+            <div className="w-5 h-5 flex items-center justify-center rounded-full bg-red-500 text-white text-sm absolute top-0 right-0">
+              {count}
+            </div>
+          )}
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <Icon.User className="h-8 w-8 text-gray-800" />
+          <div className="text-xs">Me</div>
+        </div>
       </div>
       <div className="flex items-center justify-between absolute top-0 left-0 right-0 space-x-4 px-4 pt-4 z-10">
-        <div className="">icon</div>
+        <div className="">
+          <Icon.Location className="h-8 w-8 text-gray-800" />
+        </div>
         <input
           type="text"
           className="flex-1 w-full border rounded focus:outline-none p-2 border-white"
         />
-        <div className="">icon</div>
+        <div className="">
+          <Icon.Camera className="h-8 w-8 text-gray-800" />
+        </div>
       </div>
       <div className="bg-gradient-to-b from-green-300 to-gray-50 h-80 w-full space-y-2 flex flex-col items-center justify-center relative">
         <div className="flex text-6xl">
           <div className="text-gray-700">LURU</div>
-          <div className="h-3 w-3 rounded-full bg-black"></div>
+          <div className="h-3 w-3 rounded-full bg-gray-700"></div>
         </div>
-        <div className="font-mono tracking-tight flex flex-col items-center justify-center">
+        <div className="font-mono tracking-tight flex flex-col items-center justify-center text-gray-700">
           <div>Yang kamu mau, ada di dekatmu!</div>
         </div>
         {/* <button className="text-gray-700 font-semibold px-8 py-2 rounded-full border-gray-700 border absolute bottom-14 left-1/2 transform -translate-x-1/2">
