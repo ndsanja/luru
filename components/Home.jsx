@@ -50,8 +50,7 @@ export default function Home() {
           <div className="h-3 w-3 rounded-full bg-black"></div>
         </div>
         <div className="font-mono tracking-tight flex flex-col items-center justify-center">
-          <div>Apa yang kamu cari?</div>
-          <div>Ada disekitarmu!</div>
+          <div>Yang kamu mau, ada di dekatmu!</div>
         </div>
         {/* <button className="text-gray-700 font-semibold px-8 py-2 rounded-full border-gray-700 border absolute bottom-14 left-1/2 transform -translate-x-1/2">
           Follow
