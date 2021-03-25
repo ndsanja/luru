@@ -144,7 +144,7 @@ export default function Konfirmasi() {
         {isDone ? (
           <div className="border-2 border-green-500 p-4 text-green-500 rounded">
             <div className="flex flex-col items-center justify-center font-extrabold text-xl">
-              <div> Pesanan Diterima</div>
+              <div> Pesanan Terverifikasi</div>
               <Icon.Check className="h-10 w-10" />
             </div>
             <div
@@ -158,7 +158,7 @@ export default function Konfirmasi() {
               <div className="flex space-x-4">
                 <div>Status</div>
               </div>
-              <div>On Process</div>
+              {isDiantar ? <div>Selesai</div> : <div>On Process</div>}
             </div>
             <div className="flex justify-between text-green-500 font-normal">
               <div className="flex space-x-4">
