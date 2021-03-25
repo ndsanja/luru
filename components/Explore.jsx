@@ -33,55 +33,55 @@ export default function Home() {
     }
   };
   return (
-    <div className="flex flex-col font-semibold w-full mb-20 relative bg-gray-50">
+    <div className="flex flex-col font-semibold w-full mb-20 relative bg-white">
       <div className="py-2 w-full fixed bottom-0 ring-0 left-0 bg-white shadow-inner flex items-center justify-around text-gray-500">
         <Link href="/home">
           <a>
             <div className="flex flex-col items-center justify-center">
-              <Icon.Home className="h-8 w-8 text-gray-800" />
+              <Icon.Home className="h-7 w-7 text-gray-700" />
               <div className="text-xs">Home</div>
             </div>
           </a>
         </Link>
         <div className="flex flex-col items-center justify-center">
-          <Icon.Category className="h-8 w-8 text-gray-800" />
+          <Icon.Category className="h-7 w-7 text-gray-700" />
           <div className="text-xs">Category</div>
         </div>
         <Link href="/exsplore">
           <a>
             <div className="flex flex-col items-center justify-center">
-              <Icon.Explore className="h-8 w-8 text-gray-800" />
+              <Icon.Explore className="h-7 w-7 text-gray-700" />
               <div className="text-xs">Explore</div>
             </div>
           </a>
         </Link>
         <div className="flex flex-col items-center justify-center">
-          <Icon.Shopping className="h-8 w-8 text-gray-800" />
+          <Icon.Shopping className="h-7 w-7 text-gray-700" />
           <div className="text-xs">Orders</div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <Icon.User className="h-8 w-8 text-gray-800" />
+          <Icon.User className="h-7 w-7 text-gray-700" />
           <div className="text-xs">Me</div>
         </div>
       </div>
       <div className="flex items-center justify-between absolute top-0 left-0 right-0 space-x-4 px-4 pt-4 z-10">
         <div className="">
-          <Icon.Location className="h-8 w-8 text-gray-800" />
+          <Icon.Location className="h-7 w-7 text-gray-700" />
         </div>
         <input
           type="text"
           className="flex-1 w-full border rounded focus:outline-none p-2 border-gray-700 bg-white"
         />
         <div className="">
-          <Icon.Camera className="h-8 w-8 text-gray-800" />
+          <Icon.Camera className="h-7 w-7 text-gray-700" />
         </div>
       </div>
       <div className="h-24"></div>
       {menu.map((item) => (
         <Link key={item} href={`/${item[1]}`}>
           <a>
-            <section className="px-4 mb-4 rounded overflow-hidden shadow-lg">
-              <div className="flex flex-col w-full bg-white">
+            <section className="px-4  rounded overflow-hidden ">
+              <div className="flex flex-col w-full bg-white mb-4 shadow-lg">
                 <div className="flex w-full">
                   <div className="w-1/3 bg-green-300"></div>
                   <div className="flex flex-col w-full px-2 py-2">
@@ -94,7 +94,7 @@ export default function Home() {
                     </div>
                     <div className="text-xs text-gray-700">Srengat, Blitar</div>
 
-                    <div className="text-sm text-gray-700 mt-2">
+                    <div className="text-sm font-normal text-gray-700 mt-2">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Eveniet, enim.
                     </div>

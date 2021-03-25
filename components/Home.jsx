@@ -30,25 +30,25 @@ export default function Home() {
         <Link href="/home">
           <a>
             <div className="flex flex-col items-center justify-center">
-              <Icon.Home className="h-8 w-8 text-gray-800" />
+              <Icon.Home className="h-7 w-7 text-gray-700" />
               <div className="text-xs">Home</div>
             </div>
           </a>
         </Link>
         <div className="flex flex-col items-center justify-center">
-          <Icon.Category className="h-8 w-8 text-gray-800" />
+          <Icon.Category className="h-7 w-7 text-gray-700" />
           <div className="text-xs">Category</div>
         </div>
         <Link href="/explore">
           <a>
             <div className="flex flex-col items-center justify-center">
-              <Icon.Explore className="h-8 w-8 text-gray-800" />
+              <Icon.Explore className="h-7 w-7 text-gray-700" />
               <div className="text-xs">Explore</div>
             </div>
           </a>
         </Link>
         <div className="flex flex-col items-center justify-center relative">
-          <Icon.Shopping className="h-8 w-8 text-gray-800" />
+          <Icon.Shopping className="h-7 w-7 text-gray-700" />
           <div className="text-xs">Orders</div>
           {count > 0 && (
             <div className="w-5 h-5 flex items-center justify-center rounded-full bg-red-500 text-white text-sm absolute top-0 right-0">
@@ -57,20 +57,20 @@ export default function Home() {
           )}
         </div>
         <div className="flex flex-col items-center justify-center">
-          <Icon.User className="h-8 w-8 text-gray-800" />
+          <Icon.User className="h-7 w-7 text-gray-700" />
           <div className="text-xs">Me</div>
         </div>
       </div>
       <div className="flex items-center justify-between absolute top-0 left-0 right-0 space-x-4 px-4 pt-4 z-10">
         <div className="">
-          <Icon.Location className="h-8 w-8 text-gray-800" />
+          <Icon.Location className="h-7 w-7 text-gray-700" />
         </div>
         <input
           type="text"
           className="flex-1 w-full border rounded focus:outline-none p-2 border-white"
         />
         <div className="">
-          <Icon.Camera className="h-8 w-8 text-gray-800" />
+          <Icon.Camera className="h-7 w-7 text-gray-700" />
         </div>
       </div>
       <div className="bg-gradient-to-b from-green-300 to-gray-50 h-80 w-full space-y-2 flex flex-col items-center justify-center relative">
