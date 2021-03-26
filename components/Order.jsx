@@ -147,8 +147,11 @@ export default function Order() {
         <Link href="/konfirmasi">
           <a>
             <div className="bg-green-400 flex justify-between text-white px-3 py-3 rounded shadow-xl">
-              <div> Kofirmasi Pesanan </div>
-              <Icon.Shopping className="w-6 h-6" />
+              <div className="flex items-center space-x-2">
+                <Icon.Shopping className="w-6 h-6" />
+                <div> Kofirmasi</div>
+              </div>
+              <div>Rp 33.000</div>
             </div>
           </a>
         </Link>
